@@ -1,0 +1,68 @@
+/* Resetting default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #222831;
+    padding: 20px;
+    color: #FFF; /* Set text color to white */
+}
+
+/* Header styles */
+h1 {
+    font-size: 32px; /* Increase font size for the main heading */
+    margin-bottom: 10px;
+    color: #FFD700; /* Set heading color to gold */
+    text-align: left; /* Center align the heading */
+}
+
+h3 {
+    font-size: 20px; /* Increase font size for the subheading */
+    color: #ADD8E6;
+    margin-bottom: 20px;
+    text-align: center; /* Center align the subheading */
+}
+
+/* Character list styles */
+.character-list {
+    list-style-type: none;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align the character list */
+}
+
+.character-list li {
+    flex: 0 0 calc(33.33% - 20px); /* 3 columns layout with spacing */
+    padding: 10px;
+}
+
+/* Character box styles */
+.character {
+    text-align: center;
+}
+
+.character a {
+    text-decoration: none;
+    color: #ADD8E6;
+}
+
+.character img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px; /* Soften the image edges */
+}
+
+.character p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.character p:hover {
+    color: #FF1493; /* Change text color to pink when hovered */
+}
