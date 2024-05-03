@@ -1,0 +1,84 @@
+/* Resetting default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #222831;
+    padding: 20px;
+    color: #FFF; /* Set default text color to white */
+}
+
+a {
+    color: #FFD700; /* Set link color to gold */
+    text-decoration: none; /* Remove underline */
+    
+}
+
+h3 {
+    padding: 15px; /* Add padding */
+    font-size: 18px; /* Increase font size */
+    color: #ADD8E6; /* Set heading color */
+    text-align: center; /* Center align the heading */
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    justify-content: space-between; /* Evenly distribute items horizontally */
+    margin-bottom: 20px; /* Add space at the bottom */
+}
+
+/* Link styles */
+.links ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0;
+}
+
+.links li {
+    margin-bottom: 10px; /* Add space between each link */
+}
+
+.links a {
+    display: block; /* Make links block-level elements */
+    padding: 5px 10px; /* Add padding */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.links a:hover {
+    background-color: #FFD700; /* Change background color on hover */
+    color: #222831; /* Change text color on hover */
+}
+
+/* Image gallery styles */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+    grid-gap: 10px; /* Add gap between grid items */
+}
+
+.image-gallery a {
+    display: block; /* Make images block-level elements */
+    border-radius: 8px; /* Add rounded corners */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.image-gallery img {
+    width: 100%; /* Occupy full width of container */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1); /* Scale up image on hover */
+    filter: brightness(80%); /* Reduce brightness on hover */
+}
+h1{
+    text-align: center;
+}
