@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raynare</title>
+    <link rel="stylesheet" href="../picstyle.css"> <!-- Adjusted path to CSS file -->
+</head>
+<body>
+    <h1><a href="../hentai.html">High School DxD hentai Pics</a></h1> <!-- Adjusted path to hentai.html -->
+    <h3>Welcome to the Raynare picture gallery! Explore high-quality images of Raynare.</h3>
+
+    <div class="container">
+        <div class="links">
+            <ul>
+                <li><a href="../rias.html">Rias Gremory</a></li>
+                <li><a href="../quarta.html">Xenovia quarta</a></li>
+                <li><a href="../irina.html">Irina shidou</a></li>
+                <li><a href="../kuroka.html">Kuroka toujou</a></li>
+                <li><a href="../akeno.html">Akeno himejima</a></li>
+            </ul>
+        </div>
+        <div class="image-gallery">
+            <img id="currentImage" src="../img/rias 1.jpeg" width="" alt="Raynare"> <!-- Adjusted path to image -->
+            <div class="nav">
+                <button onclick="prevImage()">&lt;&lt; Previous</button>
+                <button onclick="nextImage()">Next &gt;&gt;</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentImageIndex = 0;
+        const images = [
+
+        "../img/rias 1.jpeg",
+        "../img/rias 2.jpeg",
+        "../img/rias 3.jpeg",
+        "../img/rias 4.png",
+        "../img/rias 5.png",
+        "../img/rias 6.png",
+        "../img/rias 7.jpeg",
+        "../img/rias 8.jpeg",
+        "../img/rias 9.png",
+        "../img/rias 10.png",
+        "../img/rias 11.jpeg",
+        "../img/rias 12.jpeg",
+        "../img/rias 13.jpeg",
+        "../img/rias 14.jpeg",
+        "../img/rias 15.jpeg",
+        "../img/rias 16.jpeg",
+        "../img/rias 17.png",
+        "../img/rias 18.png",
+        "../img/rias 19.jpeg",
+        "../img/rias 20.jpeg" ,
+        ];
+
+        function showImage(index) {
+            const currentImage = document.getElementById('currentImage');
+            currentImage.src = images[index];
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            showImage(currentImageIndex);
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            showImage(currentImageIndex);
+        }
+
+        // Show the first image initially
+        showImage(currentImageIndex);
+    </script>
+</body>
+</html>
