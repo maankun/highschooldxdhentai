@@ -1,0 +1,123 @@
+/* Existing styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #222831;
+    color: #ADD8E6;
+    text-align: center;
+    
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px
+}
+a {
+    color: crimson;
+}
+
+h3 {
+    text-align: center;
+}
+
+.links {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: #ADD8E6;
+    padding: 5px 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.links ul li a:hover {
+    background-color: crimson;
+    color: #ADD8E6;
+}
+
+.image-gallery {
+    text-align: center;
+}
+
+.image-gallery img {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for navigation links */
+
+.nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.nav a {
+    padding: 10px 16px; /* Adjust button size */
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent; /* Transparent background */
+    border: 1px solid #ADD8E6; /* Border color */
+    color: #ADD8E6; /* Text color */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Transition for hover effect */
+    margin-right: 10px; /* Add margin for spacing */
+}
+
+.my-div {
+    padding: 10px 16px; /* Adjust button size */
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent; /* Transparent background */
+    border: 1px solid #ADD8E6; /* Border color */
+    color: #ADD8E6; /* Text color */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Transition for hover effect */
+    margin-right: 10px; /* Add margin for spacing */
+}
+
+
+
+
+.my-div:hover {
+    background-color: crimson; /* Background color on hover */
+    color: #ADD8E6; /* Text color on hover */
+}
+.my-div a {
+    color: #ADD8E6; /* Text color */
+    /* Other styles */
+    display: block; /* Display the div as a block element */
+}
